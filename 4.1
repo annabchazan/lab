@@ -1,0 +1,13 @@
+cores = []
+meias=0
+for x in range (0,4):
+    cores.append(int(input('teste')))
+
+y=0
+while(y<4):
+    if((y+1<4)):
+        if cores[y] == cores[y + 1]:
+            meias += 1
+        y+=1
+    else:break
+print(meias)
