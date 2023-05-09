@@ -1,0 +1,17 @@
+''' erro quando um numero menor ja foi 
+substituido ex 5 (8,10,9,5,3)'''
+
+
+n=int(input("num"))
+notas =[]
+troca =0
+
+for i in range (0,n):
+    notas.append(input('notas'))
+    maior = notas[0]
+    if(notas[i]>maior):
+        maior = notas[i]
+        troca+=1
+print(troca)
+
+
