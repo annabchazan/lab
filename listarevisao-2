@@ -1,1 +1,14 @@
+n = int(input('quantidade de testes'))
 
+for x in range (n):
+    a = int(input('Alice 0 ou 1'))
+    b = int(input('Beto 0 ou 1'))
+    c = int(input('Carlos 0 ou 1'))
+    if(a == b and a==c):
+        print('*')
+    if(a != b and a != c):
+        print(f'A - {x +1} rodada')
+    if(b!= a and b!=c):
+        print(f'A - {x +1} rodada')
+    if(c!=a and c!=b):
+        print (f'A -{x +1} rodada')
