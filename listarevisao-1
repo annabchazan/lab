@@ -2,20 +2,14 @@ n_mercados = int(input('n de mercados'))
 preco = []
 grama = []
 preco_grama = []
-meracado_barato = 0
+
 for i in range (n_mercados):
     preco.append(float(input('preco')))
     grama.append(int(input('grama')))
     preco_grama.append((preco[i]*1000)/grama[i])
-
     menor = preco_grama[i]
-
     if(preco_grama[i]<=menor):
         menor=preco_grama[i]
-        mercado_barato = i
 
-print(f'ela deve comprar {mercado_barato + 1}º mercado')
-
-
-
+print(f'menor preco ={menor}')
 
