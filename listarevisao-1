@@ -1,15 +1,17 @@
 n_mercados = int(input('n de mercados'))
-preco = []
-grama = []
-preco_grama = []
 
 for i in range (n_mercados):
-    preco.append(float(input('preco')))
-    grama.append(int(input('grama')))
-    preco_grama.append((preco[i]*1000)/grama[i])
-    menor = preco_grama[i]
-    if(preco_grama[i]<=menor):
-        menor=preco_grama[i]
+    preco=float(input('preco'))
+    grama=int(input('grama'))
+    preco_grama=(preco*1000)/grama
+    menor = preco_grama
+    if(preco_grama<=menor):
+        menor=preco_grama
 
-print(f'menor preco ={menor}')
+print(f'menor preco ={round(menor,2)}')
+
+
+
+
+
 
