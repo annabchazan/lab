@@ -8,7 +8,7 @@ for i in range (n_mercados):
     if(preco_grama<=menor):
         menor=preco_grama
 
-print(f'menor preco ={round(menor,2)}')
+print(f'menor preco= {round(menor,2)}')
 
 
 
