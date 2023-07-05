@@ -10,3 +10,4 @@ for i in range (1,n+1):
     else:
         questoes = questoes
 print(f'podem responder {questoes} questoes')
+print("subir alterações")
